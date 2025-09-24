@@ -6,7 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <script type='text/javascript'>
+    <div>this is a github page</div>
+    <!-- <script type='text/javascript'>
     function initEmbeddedMessaging() {
         try {
             embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
@@ -25,7 +26,31 @@
         }
     };
 </script>
-<script type='text/javascript' src='https://orgfarm-2718478340.my.site-com.aqsfbqex1is81k8hi9g3lsmi71u7.ac.crm.dev:6101/ESWtestfirstdeployment1758719056722/assets/js/init.js' onload='initEmbeddedMessaging()'></script>
+<script type='text/javascript' src='https://orgfarm-2718478340.my.site-com.aqsfbqex1is81k8hi9g3lsmi71u7.ac.crm.dev:6101/ESWtestfirstdeployment1758719056722/assets/js/init.js' onload='initEmbeddedMessaging()'></script> -->
+
+
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DB0000000gb6A',
+                'CWC_MIAW_DEMO',
+				'https://orgfarm-2718478340.my.site-com.aqsfbqex1is81k8hi9g3lsmi71u7.ac.crm.dev:6101/ESWtestgithub1758727773986',
+				{
+					scrt2URL: 'https://deevo-demo.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://orgfarm-2718478340.my.site-com.aqsfbqex1is81k8hi9g3lsmi71u7.ac.crm.dev:6101/ESWtestgithub1758727773986/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+
+
 
 </body>
 </html>
