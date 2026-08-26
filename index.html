@@ -32,14 +32,14 @@
 <script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
-			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-
-			embeddedservice_bootstrap.init(
-				'00DOI000000YnzB',
+			agentforce_messaging.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+            agentforce_messaging.settings.devMode = true;
+			agentforce_messaging.init(
+				'00Dxx00GjGJddfw',
 				'test_github_channel',
-				'https://orgfarm-c3dd0fc4ca.perf2j.my.pc-rnd.site.com/ESWtestgithubchannel1787651894255',
+				'https://orgfarm-6a801995f8.my.site-com.hjae7lq2m3ep0uym5n6xno06m17g.ac.crm.dev:6101/ESWtestgithubch1787680664897',
 				{
-					scrt2URL: 'https://orgfarm-c3dd0fc4ca.perf2j.my.pc-rnd.salesforce-scrt.com'
+					scrt2URL: 'https://orgfarm-a003fac77f.test3.my.pc-rnd.salesforce-scrt.com'
 				}
 			);
 		} catch (err) {
@@ -47,7 +47,7 @@
 		}
 	};
 </script>
-<script type='text/javascript' src='https://orgfarm-c3dd0fc4ca.perf2j.my.pc-rnd.site.com/ESWtestgithubchannel1787651894255/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<script type='text/javascript' src='https://orgfarm-6a801995f8.my.site-com.hjae7lq2m3ep0uym5n6xno06m17g.ac.crm.dev:6101/ESWtestgithubch1787680664897/assets/js/init.js'  onload='initEmbeddedMessaging()'></script>
 
 
 </body>
