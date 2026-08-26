@@ -10,16 +10,20 @@
 
 
 <!--<script type='text/javascript'>
+	// Add remote scrt url in local org trusted urls
+	
+
+	
 	function initEmbeddedMessaging() {
 		try {
 			agentforce_messaging.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
             agentforce_messaging.settings.devMode = true;
 			agentforce_messaging.init(
-				'00DLT000008rciV', // local
-                'CWCChannelwASA9',
-				'https://orgfarm-2718478340.my.site-com.aqsfbqex1is81k8hi9g3lsmi71u7.ac.crm.dev:6101/ESWtestgithub11758805920314',
+				'00DLT000008rciV', // remote orgfarm org..  not local
+                'CWCChannelwASA9', 
+				'https://orgfarm-2718478340.my.site-com.aqsfbqex1is81k8hi9g3lsmi71u7.ac.crm.dev:6101/ESWtestgithub11758805920314', //local
 				{
-					 scrt2URL: 'https://orgfarm-e47cee3d5f.demo.test1.my.pc-rnd.salesforce-scrt.com'
+					 scrt2URL: 'https://orgfarm-e47cee3d5f.demo.test1.my.pc-rnd.salesforce-scrt.com' // remote
 				}
 			);
 		} catch (err) {
@@ -27,9 +31,11 @@
 		}
 	};
 </script>
+	// local
 <script type='text/javascript' src='https://orgfarm-2718478340.my.site-com.aqsfbqex1is81k8hi9g3lsmi71u7.ac.crm.dev:6101/ESWtestgithub11758805920314/assets/js/init.js' onload='initEmbeddedMessaging()'></script>
 -->
 <script type='text/javascript'>
+	// added this 	https://orgfarm-a003fac77f.test3.my.pc-rnd.salesforce-scrt.com in local
 	function initEmbeddedMessaging() {
 		try {
 			agentforce_messaging.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
